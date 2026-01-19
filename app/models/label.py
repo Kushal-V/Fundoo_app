@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 
+from models.note_label import note_labels
 from db.base import Base
 
 class Label(Base):
