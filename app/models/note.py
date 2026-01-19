@@ -24,3 +24,9 @@ class Note(Base):
     )
 
     user = relationship("User", backref="notes")
+
+    labels = relationship(
+    "Label",
+    secondary="note_labels",
+    back_populates="notes"
+)
